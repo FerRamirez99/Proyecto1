@@ -1,325 +1,377 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto 1: Landing de Ventas</title>
-    <!--LINKS PARA FONTAWESOME-->
-    <link rel="stylesheet" href="./assets/fontawesome/css/fontawesome.css">
-    <link rel="stylesheet" href="./assets/fontawesome/css/brands.css">
-    <link rel="stylesheet" href="./assets/fontawesome/css/solid.css">
-    <!--LINK BOOTSTRAP-->
-    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
-    <!--LINK CSS-->
-    <link rel="stylesheet" href="./styles.css">
-</head>
-<body>
-    <header>
-        <!--NAVBAR-->
-        <nav class="navbar navbar-expand-md">
-            <div class="container-fluid">
-                <!--LOGO-->
-                <a href="#"><img src="./assets/images/download.png" alt="Logo" style="height: 50px;"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <!--NAV ITEMS-->
-                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Catálogo</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Sobre Nosotros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contacto</a>
-                        </li>
-                        <li class="nav-item">
-                            <!--INICIAR SESIÓN-->
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
-                                Iniciar sesión
-                            </button>
-                            <!--MODAL-->
-                            <div class="modal" id="myModal">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <!--MODAL HEADER-->
-                                        <div class="modal-header">
-                                            <h4 class="modal-title">Iniciar sesión</h4>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                                        </div>
-                                        <!--MODAL BODY-->
-                                        <div class="modal-body">
-                                            <form>
-                                                <label for="email">Email:</label>
-                                                <input type="email" id="email" name="email"><br>
-                                                <label for="pwd">Contraseña:</label><br>
-                                                <input type="password" id="pwd" name="pwd"><br>
-                                                <input type="checkbox" id="remember" name="remember" value="save-user">
-                                                <label for="remember">Recordar</label><br>
-                                                <input type="submit" value="Iniciar sesión">
-                                            </form>
-                                        </div>
-                                        <!--MODAL FOOTER-->
-                                        <div class="modal-footer">
-                                            <p>¿No tienes cuenta?</p>
-                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Registrate</button>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Joyería QUEEN</title>
+        <!--ICONO TAB-->
+        <link rel="icon" type="image/x-icon" href="./assets/images/logo.ico">
+        <!--LINKS PARA FONTAWESOME-->
+        <link rel="stylesheet" href="./assets/fontawesome/css/fontawesome.css">
+        <link rel="stylesheet" href="./assets/fontawesome/css/brands.css">
+        <link rel="stylesheet" href="./assets/fontawesome/css/solid.css">
+        <!--LINK BOOTSTRAP-->
+        <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
+        <!--LINK CSS-->
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        <header>
+            <!--NAVBAR-->
+            <nav class="navbar navbar-expand-md">
+                <div class="container-fluid">
+                    <!--LOGO-->
+                    <a href="./index.html"><img src="./assets/images/logo-white.png" alt="Logo"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!--NAV ITEMS-->
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Catálogo</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Sobre Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contacto</a>
+                            </li>
+                            <li class="nav-item">
+                                <!--INICIAR SESIÓN-->
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                                    Iniciar sesión
+                                </button>
+                                <!--MODAL-->
+                                <div class="modal" id="myModal">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <!--MODAL HEADER-->
+                                            <div class="modal-header">
+                                                <h4 class="modal-title">Iniciar sesión</h4>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                            </div>
+                                            <!--MODAL BODY-->
+                                            <div class="modal-body">
+                                                <form>
+                                                    <div class="form-group">
+                                                        <label for="email">Email:</label>
+                                                        <input type="email" class="form-control" id="email">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="pwd">Contraseña:</label>
+                                                        <input type="password" class="form-control" id="pwd">
+                                                    </div>
+                                                    <div class="checkbox">
+                                                        <label><input type="checkbox"> Recordar mi sesión</label>
+                                                    </div>
+                                                    <div class="pwd-forget">
+                                                        <a href="#">Contraseña olvidada</a>
+                                                    </div>
+                                                    <button type="submit" class="btn btn-primary">Inicar sesión</button>
+                                                </form>
+                                            </div>
+                                            <!--MODAL FOOTER-->
+                                            <div class="modal-footer">
+                                                <p>¿No tienes cuenta?</p>
+                                                <a href="./login.html"><button type="button" class="btn btn-outline-secondary">Registrate</button></a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </li>
-                    </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <div class="jumbotron jumbotron-fluid">
+            </nav>
+        </header>
+        <main>
+            <section class="welcome">
+                <div class="jumbotron jumbotron-fluid">
+                    <!--JUMBOTRON BIENVENIDA-->
+                    <div class="container">
+                        <h1 class="display-5">Joyería QUEEN</h1>
+                        <p class="lead">Encuentra los accesorios perfectos para cada ocasión.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="featured-prod">
                 <div class="container">
-                    <h1 class="display-4">Fluid jumbotron</h1>
-                    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-                    <hr class="my-4">
-                    <h1 class="display-6">Fluid jumbotron</h1>
-                    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-                    <p class="lead">
-                        <input type="email" placeholder="Email"><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-                    </p>
-                </div>
-            </div>
-        </section>
-        <section class="featured-prod">
-            <div class="container">
-                <h2>Productos destacados</h2>
-                <!--INICIO CAROUSEL-->
-                <div id="carouselExample" class="carousel carousel-dark slide">
-                    <!--INDICADORES CAROUSEL ABAJO-->
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    </div>
-                    <div class="carousel-inner">
-                        <!--SLIDE 1-->
-                        <div class="carousel-item active">
-                            <div class="card-wrapper">
-                                <!--CARD 1-->
-                                <div class="card">
-                                    <div class="image-wrapper">
-                                        <img src="./assets/images/featured-prod/earring-1.png" alt="Imagen producto destacado 1">
-                                    </div>
-                                    <div class="card-body">
-                                        <h5 class="card-title">Aros</h5>
-                                        <p class="card-text">Aros 3 gotas cristal rosado</p>
-                                        <p class="card-text">$60.000</p>
-                                        <a href="#" class="btn btn-primary"><i class="fa-solid fa-cart-plus"></i></a>
-                                    </div>
-                                </div>
-                                <!--CARD 2-->
-                                <div class="card">
-                                    <div class="image-wrapper">
-                                        <img src="./assets/images/featured-prod/bracelet-1.png" alt="Imagen producto destacado 2">
-                                    </div>
-                                    <div class="card-body">
-                                        <h5 class="card-title">Pulcera</h5>
-                                        <p class="card-text">Pulcera oro trama de corazones</p>
-                                        <p class="card-text">$55.000</p>
-                                        <a href="#" class="btn btn-primary"><i class="fa-solid fa-cart-plus"></i></a>
-                                    </div>
-                                </div>
-                                <!--CARD 3-->
-                                <div class="card">
-                                    <div class="image-wrapper">
-                                        <img src="./assets/images/featured-prod/necklace-2.png" alt="Imagen producto destacado 3"> 
-                                    </div>
-                                    <div class="card-body">
-                                        <h5 class="card-title">Collar</h5>
-                                        <p class="card-text">Collar oro con dijes luna y estrellas</p>
-                                        <p class="card-text">78.000</p>
-                                        <a href="#" class="btn btn-primary"><i class="fa-solid fa-cart-plus"></i></a>
-                                    </div>
-                                </div>
-                            </div>
+                    <!--SECCIÓN PRODUCTOS-->
+                    <h2>Productos destacados</h2>
+                    <!--INICIO CAROUSEL-->
+                    <div id="carouselExample" class="carousel carousel-dark slide">
+                        <!--INDICADORES CAROUSEL ABAJO-->
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
                         </div>
-                        <!--SLIDE 2-->
-                        <div class="carousel-item">
-                            <div class="card-wrapper">
-                                <div class="card">
-                                    <div class="image-wrapper">
-                                        <img src="./assets/images/featured-prod/bracelet-2.png" alt="Imagen producto destacado 4">
-                                    </div>
+                        <div class="carousel-inner">
+                            <!--SLIDE 1-->
+                            <div class="carousel-item active">
+                                <div class="card-wrapper">
                                     <!--CARD 1-->
-                                    <div class="card-body">
-                                        <h5 class="card-title">Pulcera</h5>
-                                        <p class="card-text">Set pulceras oro simple y cristal</p>
-                                        <p class="card-text">$105.000</p>
-                                        <a href="#" class="btn btn-primary"><i class="fa-solid fa-cart-plus"></i></a>
+                                    <div class="card">
+                                        <div class="image-wrapper">
+                                            <img src="./assets/images/featured-prod/earring-1.png" alt="Imagen producto destacado 1">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Aros</h5>
+                                            <p class="card-text">Aros 3 gotas cristal rosado</p>
+                                            <p class="card-text">$60.000</p>
+                                            <a href="#" class="btn btn-primary"><i class="fa-solid fa-cart-plus"></i></a>
+                                        </div>
+                                    </div>
+                                    <!--CARD 2-->
+                                    <div class="card">
+                                        <div class="image-wrapper">
+                                            <img src="./assets/images/featured-prod/bracelet-1.png" alt="Imagen producto destacado 2">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Pulcera</h5>
+                                            <p class="card-text">Pulcera oro trama de corazones</p>
+                                            <p class="card-text">$55.000</p>
+                                            <a href="#" class="btn btn-primary"><i class="fa-solid fa-cart-plus"></i></a>
+                                        </div>
+                                    </div>
+                                    <!--CARD 3-->
+                                    <div class="card">
+                                        <div class="image-wrapper">
+                                            <img src="./assets/images/featured-prod/necklace-2.png" alt="Imagen producto destacado 3"> 
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Collar</h5>
+                                            <p class="card-text">Collar oro con dijes luna y estrellas</p>
+                                            <p class="card-text">78.000</p>
+                                            <a href="#" class="btn btn-primary"><i class="fa-solid fa-cart-plus"></i></a>
+                                        </div>
                                     </div>
                                 </div>
-                                <!--CARD 2-->
-                                <div class="card">
-                                    <div class="image-wrapper">
-                                        <img src="./assets/images/featured-prod/ring-3.png" alt="Imagen producto destacado 5">
+                            </div>
+                            <!--SLIDE 2-->
+                            <div class="carousel-item">
+                                <div class="card-wrapper">
+                                    <div class="card">
+                                        <div class="image-wrapper">
+                                            <img src="./assets/images/featured-prod/bracelet-2.png" alt="Imagen producto destacado 4">
+                                        </div>
+                                        <!--CARD 1-->
+                                        <div class="card-body">
+                                            <h5 class="card-title">Pulcera</h5>
+                                            <p class="card-text">Set pulceras oro simple y cristal</p>
+                                            <p class="card-text">$105.000</p>
+                                            <a href="#" class="btn btn-primary"><i class="fa-solid fa-cart-plus"></i></a>
+                                        </div>
                                     </div>
-                                    <div class="card-body">
-                                        <h5 class="card-title">Anillo</h5>
-                                        <p class="card-text">Anillo de flores doble con cristal azul</p>
-                                        <p class="card-text">$85.000</p>
-                                        <a href="#" class="btn btn-primary"><i class="fa-solid fa-cart-plus"></i></a>
+                                    <!--CARD 2-->
+                                    <div class="card">
+                                        <div class="image-wrapper">
+                                            <img src="./assets/images/featured-prod/ring-3.png" alt="Imagen producto destacado 5">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Anillo</h5>
+                                            <p class="card-text">Anillo de flores doble con cristal azul</p>
+                                            <p class="card-text">$85.000</p>
+                                            <a href="#" class="btn btn-primary"><i class="fa-solid fa-cart-plus"></i></a>
+                                        </div>
                                     </div>
-                                </div>
-                                <!--CARD 3-->
-                                <div class="card">
-                                    <div class="image-wrapper">
-                                        <img src="./assets/images/featured-prod/neckleace-1.jpg" alt="Imagen producto destacado 6">
-                                    </div>
-                                    <div class="card-body">
-                                        <h5 class="card-title">Collar</h5>
-                                        <p class="card-text">Collar plata tramado con dije blanco</p>
-                                        <p class="card-text">$70.000</p>
-                                        <a href="#" class="btn btn-primary"><i class="fa-solid fa-cart-plus"></i></a>
+                                    <!--CARD 3-->
+                                    <div class="card">
+                                        <div class="image-wrapper">
+                                            <img src="./assets/images/featured-prod/neckleace-1.jpg" alt="Imagen producto destacado 6">
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Collar</h5>
+                                            <p class="card-text">Collar plata tramado con dije blanco</p>
+                                            <p class="card-text">$70.000</p>
+                                            <a href="#" class="btn btn-primary"><i class="fa-solid fa-cart-plus"></i></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <!--FLECHAS CAROUSEL-->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
-                    <!--FLECHAS CAROUSEL-->
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
-                </div>
-                <!--FIN CAROUSEL-->
-                <div class="button-wrapper">
-                    <button class="btn btn-primary more">Ver más</button>
-                </div>
-            </div>
-        </section>
-        <hr>
-        <section class="categories">
-            <div class="container">
-                <h2>Categorias</h2>
-                <div class="row">
-                    <div class="card mx-auto">
-                        <img src="./assets/images/category-bracelets.png" class="card-img-top" alt="Imagen categoria pulceras">
-                        <div class="card-body">
-                            <h5 class="card-title">Pulceras</h5>
-                            <a href="#" class="btn btn-outline-primary">Ver</a>
-                        </div>
-                    </div>
-                    <div class="card mx-auto">
-                        <img src="./assets/images/category-necklaces.png" class="card-img-top" alt="Imagen categoria collares">
-                        <div class="card-body">
-                            <h5 class="card-title">Collares</h5>
-                            <a href="#" class="btn btn-outline-primary">Ver</a>
-                        </div>
-                    </div>
-                    <div class="card mx-auto">
-                        <img src="./assets/images/category-rings.png" class="card-img-top" alt="Imagen categoria anillos">
-                        <div class="card-body"> 
-                            <h5 class="card-title">Anillos</h5>
-                            <a href="#" class="btn btn-outline-primary">Ver</a>
-                        </div>
-                    </div>
-                    <div class="card mx-auto">
-                        <img src="./assets/images/categpry-earrings.jpg" class="card-img-top" alt="imagen categoria aros">
-                        <div class="card-body"> 
-                            <h5 class="card-title">Aros</h5>
-                            <a href="#" class="btn btn-outline-primary">Ver</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="services">
-            <div class="container">
-                <h2>Nuestros Servicios</h2>
-                <div class="row">
-                    <div class="item mx-auto">
-                        <img src="./assets/images/services/adjust-icon.png" alt="Imagen de servicio ajuste">
-                        <h6>Ajustar</h6>
-                        <p>Ajuste de tamaño de cadena de collares y pulceras, tamaño de anillos y cierre de aros.</p>
-                    </div>
-                    <div class="item mx-auto">
-                        <img src="./assets/images/services/fix-icon.png" alt="Imagen de servicio personalización">
-                        <h6>Personalizar</h6>
-                        <p>Modificaciones a piezas, grabados, restauración y acoplamiento.</p>
-                    </div>
-                    <div class="item mx-auto">
-                        <img src="./assets/images/services/repair-icon.png" alt="Imagen de servicio reparación">
-                        <h6>Reparar</h6>
-                        <p>Reparación de cierres, sustitución de piedras, remodelación.</p>
-                    </div>
+                    <!--FIN CAROUSEL-->
                     <div class="button-wrapper">
-                        <button class="btn btn-primary">Solicitar servicio</button>
+                        <button class="btn btn-primary more">Ver más</button>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="about">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <h3>Sobre nosotros</h3>
-                        <article>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam incidunt, quaerat tempore dolorem rerum voluptates voluptatem accusamus est excepturi nam laborum unde quod nihil commodi vitae, officiis veniam accusantium numquam?</p>
-                        </article>
-                        <article>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi a atque molestiae maxime quasi placeat voluptas quibusdam at numquam explicabo consectetur, laudantium quas enim temporibus autem ipsam dignissimos sapiente eaque.</p>
-                        </article>
-                    </div>
-                    <div class="col-lg-6">
-                        <h6>Ubicación</h6>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3326.32162070412!2d-70.6028730234079!3d-33.51902270102882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662d06757799979%3A0x913dd02e5daeb4b7!2sMallplaza%20Vespucio!5e0!3m2!1ses!2scl!4v1688416025284!5m2!1ses!2scl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+            <hr>
+            <section class="categories">
+                <div class="container">
+                    <!--SECCIÓN CATEGORIAS-->
+                    <h2>Categorias</h2>
+                    <div class="row">
+                        <!--CARD 1-->
+                        <div class="card mx-auto">
+                            <img src="./assets/images/category-bracelets.png" class="card-img-top" alt="Imagen categoria pulceras">
+                            <div class="card-body">
+                                <h5 class="card-title">Pulceras</h5>
+                                <a href="#" class="btn btn-outline-primary">Ver</a>
+                            </div>
+                        </div>
+                        <!--CARD 2-->
+                        <div class="card mx-auto">
+                            <img src="./assets/images/category-necklaces.png" class="card-img-top" alt="Imagen categoria collares">
+                            <div class="card-body">
+                                <h5 class="card-title">Collares</h5>
+                                <a href="#" class="btn btn-outline-primary">Ver</a>
+                            </div>
+                        </div>
+                        <!--CARD 3-->
+                        <div class="card mx-auto">
+                            <img src="./assets/images/category-rings.png" class="card-img-top" alt="Imagen categoria anillos">
+                            <div class="card-body"> 
+                                <h5 class="card-title">Anillos</h5>
+                                <a href="#" class="btn btn-outline-primary">Ver</a>
+                            </div>
+                        </div>
+                        <!--CARD 4-->
+                        <div class="card mx-auto">
+                            <img src="./assets/images/categpry-earrings.jpg" class="card-img-top" alt="imagen categoria aros">
+                            <div class="card-body"> 
+                                <h5 class="card-title">Aros</h5>
+                                <a href="#" class="btn btn-outline-primary">Ver</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <h4>Redes sociales</h4>
-                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
-                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </section>
+            <section class="services">
+                <div class="container">
+                    <!--SECCIÓN SERVICIOS-->
+                    <h2>Nuestros Servicios</h2>
+                    <div class="row">
+                        <div class="item mx-auto">
+                            <img src="./assets/images/services/adjust-icon.png" alt="Imagen de servicio ajuste">
+                            <h6>Ajustar</h6>
+                            <p>Ajuste de tamaño de cadena de collares y pulceras, tamaño de anillos y cierre de aros.</p>
+                        </div>
+                        <div class="item mx-auto">
+                            <img src="./assets/images/services/fix-icon.png" alt="Imagen de servicio personalización">
+                            <h6>Personalizar</h6>
+                            <p>Modificaciones a piezas, grabados, restauración y acoplamiento.</p>
+                        </div>
+                        <div class="item mx-auto">
+                            <img src="./assets/images/services/repair-icon.png" alt="Imagen de servicio reparación">
+                            <h6>Reparar</h6>
+                            <p>Reparación de cierres, sustitución de piedras, remodelación.</p>
+                        </div>
+                        <div class="button-wrapper">
+                            <button class="btn btn-primary">Solicitar servicio</button>
+                        </div>
                     </div>
-                    <div class="col-lg-2">
-                        <h5>Nosotros</h5>
-                        <ul>
-                            <li><a href="#">Catálogo</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Contacto</a></li>
-                        </ul>
+                </div>
+            </section>
+            <section class="about">
+                <div class="container">
+                    <!--SECCIÓN ABOUT-->
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <h3>Donde encontarnos</h3>
+                            <article>
+                                <p>Nuestra tinda se ubica en Mall Plaza Vespucio, en Av. Vicuña Mackena 7110, La Florida, Santiago.</p><br>
+                                <p><strong>¿No vives en Santiago?</strong></p>
+                                <p>También contamos con un sistemas de delivery disponible para todo el país.</p>
+                                <button class="btn btn-outline-primary">Ver más información</button>
+                            </article>
+                        </div>
+                        <div class="col-lg-6">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3326.32162070412!2d-70.6028730234079!3d-33.51902270102882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662d06757799979%3A0x913dd02e5daeb4b7!2sMallplaza%20Vespucio!5e0!3m2!1ses!2scl!4v1688416025284!5m2!1ses!2scl" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
                     </div>
-                    <div class="col-lg-2">
-                        <h5>Empresa</h5>
-                        <ul>
-                            <li><a href="#">Prensa</a></li>
-                            <li><a href="#">Partens</a></li>
-                            <li><a href="#">Trabajos</a></li>
+                </div>
+            </section>
+            <!--ASIDE PUBLICIDAD-->
+            <aside class="ads">
+                <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                        <h1 class="display-5">¿Te faltan atuendos para usar tus joyas?</h1>
+                        <p class="lead">¡No te preocupes! En Dimension Omega podrás encontar el atuendo perfecto para lucir al máximo tus joyas QUEEN.</p>
+                        <p class="lead">Puedes acceder a su página haciendo <a href="#">click aqui</a></p>
+                        
+                    </div>
+                </div>
+            </aside>
+            <section class="subscribe">
+                <!--SECCIÓN SUSCRIBIRSE-->
+                <div class="card mb-3 mx-auto">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="./assets/images/email-marketing.png" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">¡Suscríbete a nuestro Newsletter!</h5>
+                                <p class="card-text">Suscríbete a nuestro newsletter para recibir ofertas, noticias y actualizaciones.</p>
+                                <form>
+                                    <div class="form-group">
+                                        <label for="email">Email:</label>
+                                        <input type="email" class="form-control" id="email">
+                                    </div>
+                                    <div class="checkbox">
+                                        <label><input type="checkbox"> Acepto términos y condiciones.</label>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Suscribirse</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--FOOTER-->
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <!--REDES SOCIALES-->
+                        <div class="col-lg-6">
+                            <h4>Redes sociales</h4>
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                        <!--LINKS DEL NEGOCIO-->
+                        <div class="col-lg-2">
+                            <h5>Nosotros</h5>
+                            <ul>
+                                <li><a href="#">Catálogo</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Contacto</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-2">
+                            <h5>Empresa</h5>
+                            <ul>
+                                <li><a href="#">Prensa</a></li>
+                                <li><a href="#">Partens</a></li>
+                                <li><a href="#">Trabajos</a></li>
 
-                        </ul>
-                    </div>
-                    <div class="col-lg-2">
-                        <h5>Legal</h5>
-                        <ul>
-                            <li><a href="#">Privacidad</a></li>
-                            <li><a href="#">Términos</a></li>
-                        </ul>
+                            </ul>
+                        </div>
+                        <div class="col-lg-2">
+                            <h5>Legal</h5>
+                            <ul>
+                                <li><a href="#">Privacidad</a></li>
+                                <li><a href="#">Términos</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </footer>
-    </main>
-    <!--SCRIPT BOOTSTRAP-->
-    <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
-</body>
+            </footer>
+        </main>
+        <!--SCRIPT BOOTSTRAP-->
+        <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    </body>
 </html>

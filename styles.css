@@ -7,11 +7,11 @@ body {
     font-family: Epilogue;
     background-color: #EBEBEB;
 }
-@media only screen and (max-width: 600px) {
+/*@media only screen and (max-width: 600px) {
     body {
-      position: fixed;
+      
     }
-  }
+  }*/
 a {
     color: #FFFFFF;
     text-decoration: none;
@@ -38,6 +38,16 @@ a {
     color: #C1887F;
     box-shadow: inset 0 0 0 1000px rgba(0,0,0,.1);
 }
+.btn-outline-secondary {
+    color: #787785;
+    border: 1px solid #787785;
+}
+.btn-outline-secondary:hover {
+    color: #787785;
+    border: 1px solid #787785;
+    background-color: #FFFFFF;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.1);
+}
 /*NAVBAR*/
 .navbar {
     background-color: #787785;
@@ -45,13 +55,37 @@ a {
 .nav-link {
     color: #FFFFFF;
 }
+.navbar img {
+    height: 50px;
+}
+/*MODAL*/
+.modal-content {
+    width: 80%;
+}
+.modal-body {
+    padding: 30px 20px 30px 20px;
+}
+.modal-body #pwd {
+    margin-bottom: 10px; 
+}
+.pwd-forget {
+    margin: 0 0 15px 0;
+}
+.modal-body a {
+    font-size: 14px;
+    color: #C1887F;
+    text-decoration: underline;
+}
+.modal-body .btn-primary {
+    margin: 0;
+}
 /*SECCIÓN JUMBOTRON*/
-.jumbotron {
+.welcome .jumbotron {
     background-image: url(./assets/images/jumbotron-bg.png); 
     box-shadow: inset 0 0 0 1000px rgba(0,0,0,.5);
     background-size: cover;
     background-position: center;
-    padding: 60px;
+    padding: 150px;
     color: #FFFFFF;
 }
 /*SECCIÓN PROD. DESTACADOS*/
@@ -165,6 +199,55 @@ h2 {
 .about iframe {
     width: 80%;
 }
+/*ASIDE*/
+.ads .jumbotron {
+    background-image: url(./assets/images/ads-jumbo-bg.jpg);
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.3);
+    background-size: cover;
+    background-position: center;
+    padding: 100px;
+    color: #FFFFFF;
+}
+.ads .display-5 {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.ads .lead {
+    font-size: 26px;
+}
+.ads a {
+    font-weight: bold;
+    text-decoration: underline;
+}
+.subscribe {
+    padding: 50px;
+    text-align: center;
+}
+.subscribe .card {
+    padding: 20px;
+    max-width: 70%;
+}
+.subscribe img {
+    width: 200px;
+    margin-top: 50px;
+}
+.subscribe h5 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.subscribe p {
+    font-size: 20px;
+}
+.subscribe form {
+    text-align: left;
+}
+.subscribe #email {
+    margin-bottom: 10px;
+}
+.subscribe .btn-primary {
+    margin: 20px 0 0 0;
+}
 /*FOOTER*/
 footer {
     background-color: #787785;
@@ -186,4 +269,39 @@ footer li {
 }
 footer li a:hover {
     text-decoration: underline;
+}
+/*LOGIN PAGE*/
+.login {
+    padding: 50px;
+}
+.login .login-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login .card {
+    padding-right: 20px;
+}
+.login h3 {
+    margin: 20px 0;
+    font-weight: bold;
+    font-size: 32px;
+}
+.login input, select {
+    margin: 10px;
+}
+.login label {
+    margin-left: 5px;
+}
+.login .form-check {
+    margin: 0 0 20px 10px; 
+    text-align: left !important
+}
+.login .form-check label {
+    margin-top: 10px;
+    font-size: 14px;
+}
+.login button {
+    width: 50%;
+    margin-bottom: 30px;
 }

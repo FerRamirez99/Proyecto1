@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Joyería QUEEN</title>
+        <!--ICONO TAB-->
+        <link rel="icon" type="image/x-icon" href="./assets/images/logo.ico">
+        <!--LINKS PARA FONTAWESOME-->
+        <link rel="stylesheet" href="./assets/fontawesome/css/fontawesome.css">
+        <link rel="stylesheet" href="./assets/fontawesome/css/brands.css">
+        <link rel="stylesheet" href="./assets/fontawesome/css/solid.css">
+        <!--LINK BOOTSTRAP-->
+        <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
+        <!--LINK CSS-->
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        <header>
+            <!--NAVBAR-->
+            <nav class="navbar navbar-expand-md">
+                <div class="container-fluid">
+                    <!--LOGO-->
+                    <a href="./index.html"><img src="./assets/images/logo-white.png" alt="Logo"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!--NAV ITEMS-->
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Catálogo</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Sobre Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contacto</a>
+                            </li>
+                            <li class="nav-item">
+                                <!--INICIAR SESIÓN-->
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                                    Iniciar sesión
+                                </button>
+                                <!--MODAL-->
+                                <div class="modal" id="myModal">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <!--MODAL HEADER-->
+                                            <div class="modal-header">
+                                                <h4 class="modal-title">Iniciar sesión</h4>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                            </div>
+                                            <!--MODAL BODY-->
+                                            <div class="modal-body">
+                                                <form>
+                                                    <div class="form-group">
+                                                        <label for="email">Email:</label>
+                                                        <input type="email" class="form-control" id="email">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="pwd">Contraseña:</label>
+                                                        <input type="password" class="form-control" id="pwd">
+                                                    </div>
+                                                    <div class="checkbox">
+                                                        <label><input type="checkbox"> Recordar mi sesión</label>
+                                                    </div>
+                                                    <div class="pwd-forget">
+                                                        <a href="#">Contraseña olvidada</a>
+                                                    </div>
+                                                    <button type="submit" class="btn btn-primary">Inicar sesión</button>
+                                                </form>
+                                            </div>
+                                            <!--MODAL FOOTER-->
+                                            <div class="modal-footer">
+                                                <p>¿No tienes cuenta?</p>
+                                                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Registrate</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="login">
+                <div class="container">
+                    <div class="row login-card">
+                        <div class="col-lg-8 col-xl-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h3>Registrarse</h3>
+                                    <!--FORMULARIO REGISTRO-->
+                                    <form>
+                                        <div class="row">
+                                            <!-- INPUT NOMBRE Y APELLIDO-->
+                                            <div class="col-md-6">
+                                                <div class="form-floating">
+                                                    <input class="form-control" type="text" name="name" id="name" required>
+                                                    <label for="name">Nombre</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-floating">
+                                                    <input class="form-control" type="text" name="lastname" id="lastname" required>
+                                                    <label for="lastname">Apellido</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-floating">
+                                            <!--INPUT CORREO-->
+                                            <input class="form-control" type="email" name="email" id="email" required>
+                                            <label for="email">Correo electrónico</label>
+                                        </div> 
+                                        <div class="form-floating">
+                                            <!--INPUT DIRECCIÓN-->
+                                            <input class="form-control" type="text" name="address" id="address">
+                                            <label for="address">Dirección</label>
+                                        </div>
+                                        <div class="row">
+                                            <!--INPUT CIUDAD-->
+                                            <div class="col-md-4">
+                                                <div class="form-floating">
+                                                    <input class="form-control" type="text" name="city" id="city">
+                                                    <label for="city">Ciudad</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <!--SELECT COMUNA-->
+                                                <div class="form-floating">
+                                                    <select class="form-select" id="comuna">
+                                                        <option value="1">Cerrillos</option>
+                                                        <option value="2">Cerro Navia</option>
+                                                        <option value="3">Conchalí</option>
+                                                        <option value="4">El Bosque</option>
+                                                        <option value="5">Estación Central</option>
+                                                        <option value="6">Huechuraba</option>
+                                                        <option value="7">Independencia</option>
+                                                        <option value="8">La Cisterna</option>
+                                                        <option value="9">La Florida</option>
+                                                        <option value="10">La Granja</option>
+                                                        <option value="11">La Pintana</option>
+                                                        <option value="12">La Reina</option>
+                                                        <option value="13">Las Condes</option>
+                                                        <option value="14">Lo Barnechea</option>
+                                                        <option value="15">Lo Espejo</option>
+                                                        <option value="16">Lo Prado</option>
+                                                        <option value="17">Macul</option>
+                                                        <option value="18">Maipú</option>
+                                                        <option value="19">Ñuñoa</option>
+                                                        <option value="20">Pedro Aguirre Cerda</option>
+                                                        <option value="21">Peñalolén</option>
+                                                        <option value="22">Providencia</option>
+                                                        <option value="23">Pudahuel</option>
+                                                        <option value="24">Puente Alto</option>
+                                                        <option value="25">Quilicura</option>
+                                                        <option value="26">Quinta Normal</option>
+                                                        <option value="27">Recoleta</option>
+                                                        <option value="28">Renca</option>
+                                                        <option value="29">San Bernardo</option>
+                                                        <option value="30">San Joaquín</option>
+                                                        <option value="31">San Miguel</option>
+                                                        <option value="32">San Ramón</option>
+                                                        <option value="33" selected>Santiago</option>
+                                                        <option value="34">Vitacura</option>
+                                                    </select>
+                                                    <label for="comuna">Comuna</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <!--SELECT REGIÓN-->
+                                                <div class="form-floating">
+                                                    <select class="form-select" id="region" aria-label="Floating label select example">
+                                                        <option value="1">Arica y Parinacota</option>
+                                                        <option value="2">Tarapacá</option>
+                                                        <option value="3">Atacama</option>
+                                                        <option value="4">Coquimbo</option>
+                                                        <option value="5">Valparaíso</option>
+                                                        <option value="6" selected>Metropolitana</option>
+                                                        <option value="7">O'Higgins</option>
+                                                        <option value="8">Maule</option>
+                                                        <option value="9">Ñuble</option>
+                                                        <option value="10">Biobío</option>
+                                                        <option value="11">La Araucanía</option>
+                                                        <option value="12">Los Ríos</option>
+                                                        <option value="13">Los Lagos</option>
+                                                        <option value="14">Aysén</option>
+                                                        <option value="15">Magallanes</option>
+                                                    </select>
+                                                    <label for="region">Región</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--INPUT CONTRASEÑA-->
+                                        <div class="form-floating">
+                                            <input class="form-control" type="password" name="password" id="password" required>
+                                            <label for="password">Contraseña</label>
+                                        </div>
+                                        <div class="form-floating">
+                                            <input class="form-control" type="password" name="password" id="password" required>
+                                            <label for="password">Repetir contraseña</label>
+                                        </div>
+                                        <!--CHECKBOX TÉRMINOS-->
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="1" id="terminos" required>
+                                            <label class="form-check-label" for="terminos">Acepto términos y condiciones.</label>
+                                        </div> 
+                                        <!--BOTON ENVIAR-->
+                                        <button type="submit" class="btn btn-primary">Registrarse</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!--FOOTER-->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <!--REDES SOCIALES-->
+                    <div class="col-lg-6">
+                        <h4>Redes sociales</h4>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                    <!--LINKS DEL NEGOCIO-->
+                    <div class="col-lg-2">
+                        <h5>Nosotros</h5>
+                        <ul>
+                            <li><a href="#">Catálogo</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contacto</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2">
+                        <h5>Empresa</h5>
+                        <ul>
+                            <li><a href="#">Prensa</a></li>
+                            <li><a href="#">Partens</a></li>
+                            <li><a href="#">Trabajos</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="col-lg-2">
+                        <h5>Legal</h5>
+                        <ul>
+                            <li><a href="#">Privacidad</a></li>
+                            <li><a href="#">Términos</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <!--SCRIPT BOOTSTRAP-->
+    <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
