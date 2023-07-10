@@ -6,12 +6,7 @@
 body {
     font-family: Epilogue;
     background-color: #EBEBEB;
-}
-/*@media only screen and (max-width: 600px) {
-    body {
-      
-    }
-  }*/
+} 
 a {
     color: #FFFFFF;
     text-decoration: none;
@@ -305,3 +300,96 @@ footer li a:hover {
     width: 50%;
     margin-bottom: 30px;
 }
+/*ESTILOS MOBILE*/
+@media only screen and (max-width: 600px) {
+    body {
+        text-align: center;
+    }
+    h2 {
+        font-size: 28px;
+    }
+    /*NAVBAR*/
+    .navbar-nav {
+        text-align: center;
+    }
+    .nav-item {
+        margin: 8px 0;
+    }
+    .custom-toggler .navbar-toggler-icon {
+        background-image: url(./assets/images/custom-menu-icon.svg);
+    }
+    .custom-toggler {
+        border: 1px solid #FFFFFF;
+    }
+    /*MODAL*/
+    /*JUMBOTRON BIENVENIDA*/
+    .welcome .jumbotron {
+        padding: 50px;
+    } 
+    /*PRODUCTOS DESTACADOS*/
+    .featured-prod {
+        padding-top: 30px;
+    }
+    .carousel-desktop {
+        display: none;
+    }
+    /*CATEGORIAS*/
+    .categories {
+        padding: 20px;
+    }
+    .categories .card {
+        width: 90%;
+    }
+    /*SERVICIOS*/
+    .services {
+        padding: 20px;
+    }
+    .services .item {
+        width: 90%;
+    }
+    .services .item img {
+        width: 100px;
+        height: 100px;
+    }
+    .services button {
+        width: 70%; 
+    }
+    /*ABOUT*/
+    .about .btn-outline-primary {
+        margin-bottom: 15px;
+    }
+    /*ASIDE*/
+    .ads .jumbotron {
+        padding: 25px;
+    }
+    .ads h1 {
+        font-size: 24px;
+    }
+    .ads .lead {
+        font-size: 18px;
+    }
+    /*SUBSCRIBE*/
+    .subscribe {
+        padding: 20px;
+    } 
+    .subscribe .card {
+        padding: 20px;
+        max-width: 90%;
+    }
+    .subscribe img {
+        width: 100px;
+    }
+    .subscribe h5 {
+        font-size: 22px;
+    }
+    .subscribe p {
+        font-size: 18px;
+    }
+    .subscribe .checkbox label {
+        font-size: 13px;
+    }
+    /*FOOTER*/
+    footer i {
+        margin: 20px 10px 30px 20px;
+    }
+  }
