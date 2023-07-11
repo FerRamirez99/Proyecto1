@@ -99,6 +99,9 @@ h2 {
     width: 50%;
 }
 /*ESTILOS CARDS CAROUSEL*/  
+.carousel-mobile {
+    display: none;
+}
 .card-wrapper {
     display: flex;
     justify-content: center;
@@ -123,6 +126,7 @@ h2 {
 .carousel-inner .card-title {
     font-size: 18px;
     font-weight: 200;
+    text-transform: uppercase;
 }
 .carousel-inner .card-text {
     font-size: 24px;
@@ -265,6 +269,11 @@ footer li {
 footer li a:hover {
     text-decoration: underline;
 }
+footer p {
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center;
+}
 /*LOGIN PAGE*/
 .login {
     padding: 50px;
@@ -322,6 +331,16 @@ footer li a:hover {
         border: 1px solid #FFFFFF;
     }
     /*MODAL*/
+    .modal-open {
+        padding: 0 !important;
+    }
+    .modal-dialog {
+        display: flex;
+        justify-content: center;
+    }
+    .modal-content {
+        width: 90%;
+    }
     /*JUMBOTRON BIENVENIDA*/
     .welcome .jumbotron {
         padding: 50px;
@@ -329,9 +348,34 @@ footer li a:hover {
     /*PRODUCTOS DESTACADOS*/
     .featured-prod {
         padding-top: 30px;
-    }
+    } 
+    /*CAROUSEL*/
     .carousel-desktop {
         display: none;
+    }
+    .carousel-mobile {
+        display: block ;
+    }
+    .card-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+    .carousel .card {
+        width: 78%;
+    }
+    .carousel .image-wrapper {
+        height: 42vw;
+    }
+    .carousel .card-title {
+        font-size: 14px;
+    }
+    .carousel .card-text {
+        font-size: 20px;
+    }
+    .carousel .carousel-indicators button {
+        width: 10px;
+       height: 10px;
+       border-radius: 100%;
     }
     /*CATEGORIAS*/
     .categories {
@@ -391,5 +435,16 @@ footer li a:hover {
     /*FOOTER*/
     footer i {
         margin: 20px 10px 30px 20px;
+    }
+    /*LOGIN PAGE*/
+    .login {
+        padding: 20px;
+    }
+    .login .form-check {
+        margin: 0 0 20px 10px; 
+        text-align: left !important
+    }
+    .login .form-check label {
+        font-size: 13px;
     }
   }
